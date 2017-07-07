@@ -1,0 +1,11 @@
+
+all:
+
+        $(MAKE) -C API
+        $(MAKE) -C virtualExchange
+        $(MAKE) -C tradingEngine
+
+clean:
+        $(MAKE) clean -C API
+        $(MAKE) clean -C virtualExchange
+        $(MAKE) clean -C tradingEngine
